@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV con SASS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <script>
+        var click = 0;
+        function fuenteDislexicos(){
+          click++;
+          if(click === 1){
+            var fuente = new FontFace('OpenDyslexic-Regular', 'url(/font/OpenDyslexic-Regular.otf)');
+                document.body.style.fontFamily = 'OpenDyslexic-Regular';
+
+          }else if(click === 2){
+           document.body.style.fontFamily = 'Arial';
+           click = 0;
+          }
+        }
+        </script>
+    <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4 imagen">
+            <img src="IMG/perfil.png" class="img-fluid rounded-start" alt="mi imagen">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">David Chiscano</h5>
+              <p class="card-text">Técnico superior en desarrollo de aplicaciones web</p>
+            </div>
+          </div>
+        </div>
+        <div id="exp">
+            <h3>Datos personales</h3>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nombre completo: David Chiscano Hidalgo</li>
+            <li class="list-group-item">Direccion: Calle Pez 30</li>
+            <li class="list-group-item">Contacto: 626354845 / chiscano94@gmail.com </li>
+          </ul>
+        <div id="exp">
+            <h3>Experiencia</h3>
+        </div>
+
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Microlift S.L</div>
+                Técnico
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Amazon</div>
+                Mozo de almacen
+              </div>
+            </li>
+            </li>
+          </ol>
+          <div id="exp">
+            <h3>Formación</h3>
+          </div>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Técnico superior en desarrollo de aplicaciones web</div>
+                IES Lope de Vega
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Técnico en sistemas microinformaticos y redes</div>
+                IES Clara del Rey
+              </div>
+            </li>
+          </ol>
+          <div id="btnDislexicos">
+            <button type="button" id="cambioFuente" class="btn btn-info" onclick="fuenteDislexicos()">Modo dislexicos</button>
+          </div>
+      </div>
+   
+    <!-- Bootstrap JS -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

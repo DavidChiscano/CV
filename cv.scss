@@ -1,0 +1,52 @@
+/* Define standard variables and values for website */
+$bgcolor: #CAF0F8;
+$bgcolorbody: #03045E;
+$textcolor: #03045E;
+$fontsize: 18px;
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url("font/OpenDyslexic-Regular.otf") format("opentype");
+}
+
+@media only screen and (max-width: 764px){
+  .img-fluid {
+    max-width: 50%;
+  }
+  .imagen{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.card{
+ margin: 0 auto;
+ background-color: $bgcolor;
+ max-width: 576px;
+}
+.list-group-item{
+  background-color: $bgcolor;
+}
+#exp{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#btnDislexicos{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Use the variables */
+body {
+  margin-top: 20px;
+  display: flex;
+  background-color: $bgcolorbody;
+  color: $textcolor;
+  font-size: $fontsize;
+}
