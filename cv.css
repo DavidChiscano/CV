@@ -1,4 +1,4 @@
-/* Define standard variables and values for website */
+/* Variables estandar */
 @font-face {
   font-family: OpenDyslexic-Regular;
   src: url("font/OpenDyslexic-Regular.otf") format("opentype");
@@ -23,7 +23,7 @@
   background-color: #CAF0F8;
 }
 
-#exp {
+#titulos {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -36,12 +36,20 @@
   margin-bottom: 20px;
 }
 
-/* Use the variables */
+/* Uso las variables */
 body {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   background-color: #03045E;
   color: #03045E;
+  font-size: 18px;
+}
+
+.body_dislexia {
+  display: flex;
+  margin-top: 20px;
+  background-color: #ebebeb;
+  color: #000000;
   font-size: 18px;
 }
 

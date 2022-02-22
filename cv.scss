@@ -1,8 +1,11 @@
-/* Define standard variables and values for website */
+/* Variables estandar */
 $bgcolor: #CAF0F8;
 $bgcolorbody: #03045E;
 $textcolor: #03045E;
 $fontsize: 18px;
+
+$bgcolordisx: #ebebeb;
+$textcolordisx: #000000;
 
 @font-face {
   font-family: OpenDyslexic-Regular;
@@ -27,7 +30,7 @@ $fontsize: 18px;
 .list-group-item{
   background-color: $bgcolor;
 }
-#exp{
+#titulos{
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -42,11 +45,19 @@ $fontsize: 18px;
 
 
 
-/* Use the variables */
-body {
-  margin-top: 20px;
+/* Uso las variables */
+.body_principal {
   display: flex;
+  margin-top: 20px;
   background-color: $bgcolorbody;
   color: $textcolor;
   font-size: $fontsize;
+}
+.body_dislexia{
+  display: flex;
+  margin-top: 20px;
+  background-color: $bgcolordisx;
+  color: $textcolordisx;
+  font-size: $fontsize;
+
 }

@@ -18,9 +18,13 @@
           if(click === 1){
             var fuente = new FontFace('OpenDyslexic-Regular', 'url(/font/OpenDyslexic-Regular.otf)');
                 document.body.style.fontFamily = 'OpenDyslexic-Regular';
+                document.body.className = '';
+                document.body.classList.add("body_dislexia");
 
           }else if(click === 2){
            document.body.style.fontFamily = 'Arial';
+           document.body.className = '';
+           document.body.classList.add("body_principal");
            click = 0;
           }
         }
@@ -32,12 +36,13 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">David Chiscano</h5>
+              <h4 class="card-title">David Chiscano Hidalgo</h4>
               <p class="card-text">Técnico superior en desarrollo de aplicaciones web</p>
+              <p class="card-text">Spring Boot, Java, Javascript, HTML, CSS3, Bootstrap, MySQL, PLSQL</p>
             </div>
           </div>
         </div>
-        <div id="exp">
+        <div id="titulos">
             <h3>Datos personales</h3>
         </div>
         <ul class="list-group list-group-flush">
@@ -45,7 +50,7 @@
             <li class="list-group-item">Direccion: Calle Pez 30</li>
             <li class="list-group-item">Contacto: 626354845 / chiscano94@gmail.com </li>
           </ul>
-        <div id="exp">
+        <div id="titulos">
             <h3>Experiencia</h3>
         </div>
 
@@ -65,7 +70,7 @@
             </li>
             </li>
           </ol>
-          <div id="exp">
+          <div id="titulos">
             <h3>Formación</h3>
           </div>
           <ol class="list-group list-group-numbered">
